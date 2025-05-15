@@ -3,9 +3,6 @@ definePageMeta({
   middleware: ["is-auth"]
 
 });
-import { useAuthStore } from '@/stores/auth';
-
-const authStore = useAuthStore();
 
 
 const email = useState('email',(()=>''))
