@@ -22,7 +22,7 @@ const authStore = useAuthStore();
     <div class="flex justify-center items-center">
       <!--! Это картинка с Корги -->
       <img
-        class="brightness-107 border-30 absolute w-120  border-amber-300"
+        class="brightness-107 border-30 absolute  mx-[100%] md:w-1/5 absolute h-max-[100%] border-amber-300"
         src="/public/1.webp"
         alt=""
       />

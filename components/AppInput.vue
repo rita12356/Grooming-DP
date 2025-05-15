@@ -46,6 +46,6 @@
   @apply flex w-100 mt-9  justify-center rounded-4xl active:bg-amber-800 bg-amber-600 px-3 py-1.5 text-sm/6 font-semibold transition-transform hover:scale-105 text-white shadow-xs hover:bg-amber-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600;
 }
 .form{
-  @apply sm:mt-600 ml-10 md:-mt-500 lg:-mt-170 min-[320px]:-mt-170;
+  @apply sm:mt-600 ml-10 md:-mt-500 lg:-mt-150 min-[320px]:-mt-170;
 }
 </style>

@@ -73,13 +73,13 @@ export default {
 <style>
 @reference "tailwindcss";
 .link {
-  @apply sm:flex-row  text-[11px]      active:text-amber-500 md:text-[22px] lg:text-[22px]      tracking-tight transition ease-in-out delay-160   hover:text-amber-600;
+  @apply sm:flex-row  text-[11px]      active:text-amber-500 md:text-[10px]  lg:text-[22px]      tracking-tight transition ease-in-out delay-160   hover:text-amber-600;
 }
 .toggle {
-  @apply  md:hidden lg:block;
+  @apply sm:hidden md:hidden lg:block;
   
 }.button {
-  @apply  md:block  lg:block;
+  @apply sm:block md:block  lg:block;
 }
 
 </style>
