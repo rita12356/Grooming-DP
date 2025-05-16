@@ -28,6 +28,10 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-04-03',
+  target: 'static',
+  generate: {
+     fallback: true
+  },
 routeRules: {
   '/aboutus': {swr:3600},
   '/services': {swr: 3600},
