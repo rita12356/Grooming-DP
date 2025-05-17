@@ -32,6 +32,13 @@ export default defineNuxtConfig({
   generate: {
      fallback: true
   },
+  app:{
+  baseURL: '/Grooming-DP/'
+  },
+
+  router: {
+    base: '/Grooming-DP/'
+  }
 routeRules: {
   '/aboutus': {swr:3600},
   '/services': {swr: 3600},
