@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     devtools: { enabled: false },
   },
  
-  css:[`~/assets/css/main.css`, `~/assets/fonts.css`],
+  css:[`~/assets/css/main.css`],
   modules: [
     '@pinia/nuxt',
    'pinia-plugin-persistedstate/nuxt',
