@@ -19,7 +19,7 @@
       <!--! Это картинка с Корги -->
       <img
         class="brightness-107 border-30 absolute mx-auto w-full md:w-1/6 border-amber-300"
-        src="/public/1.webp"
+        src="/1.webp"
         alt=""
       />
     </div>
