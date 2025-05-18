@@ -4,7 +4,7 @@
   >
     Виды
   </h2>
-  <hr class="sm:px-60 w- md:px-60 lg:px-60 ml-220 mt-30 mr-220  border-amber-500" />
+  <hr class="sm:px-60  md:px-60 lg:px-60 ml-220 mt-30 mr-220  border-amber-500" />
 
   <span
     class="sm:px-120 md:px-120 lg:px-10 cursor-pointer flex flex-1 justify-baseline gap-20"
@@ -14,7 +14,7 @@
       src="/5.png"
       alt=""
     />
- <h2 class="mt-54 -ml-100 font-extrabold text-[19px] text-black"> СТРИЖКА "ПЭТ" ГРУМИНГ </h2>
+ <h2 class="mt-55 -ml-100 font-extrabold text-[19px] text-black"> СТРИЖКА "ПЭТ" ГРУМИНГ </h2>
     <p class="mt-62 -ml-90 font-mono text-[17px] text-black">
       
       Короткая стрижка по стандартам шпица, удобная для домашнего содержания
@@ -25,7 +25,7 @@
       src="/2.png"
       alt=""
     />
-      <h2 class="mt-54 -ml-100 font-extrabold text-[19px] text-black">СТРИЖКА "ПЭТ" ГРУМИНГ </h2>
+      <h2 class="mt-55 -ml-100 font-extrabold text-[19px] text-black">СТРИЖКА "ПЭТ" ГРУМИНГ </h2>
     <p class="text-black mt-62 font-mono text-[17px] -ml-90">
       
       Второй вариант практичной стрижки для городских реалей
@@ -36,7 +36,7 @@
       src="/3.png"
       alt=""
     />
-    <h2 class="mt-54 -ml-100 font-extrabold text-[19px] text-black">СТРИЖКА "ШОУ" ГРУМИНГ </h2>
+    <h2 class="mt-55 -ml-100 font-extrabold text-[19px] text-black">СТРИЖКА "ШОУ" ГРУМИНГ </h2>
     <p class="text-black mt-62 font-mono text-[17px] -ml-90">
       
       Породная стрижка шерсти остается <br>существенно больше подходит для <br>выставок
@@ -52,7 +52,7 @@
       src="/7.png"
       alt=""
     />
-<h2 class="mt-54 -ml-100 font-extrabold text-[19px] text-black"> СТРИЖКА "ПЭТ" ГРУМИНГ И КРЕАТИВНОЕ ОКРАШИВАНИЕ</h2>
+<h2 class="mt-55 -ml-100 font-extrabold text-[19px] text-black"> СТРИЖКА "ПЭТ" ГРУМИНГ И КРЕАТИВНОЕ ОКРАШИВАНИЕ</h2>
     <p class="mt-62 -ml-170 font-mono text-[17px] text-black">
       
       Стрижка по вашим желаниям, а также креативное окрашивание специальной краской, <br>чтобы подчеркнуть индивидуальность и собирать все взгляды 
@@ -63,7 +63,7 @@
       src="/8.png"
       alt=""
     />
-     <h2 class="mt-54 -ml-90 font-extrabold text-[19px] text-black">ГИГИЕНА</h2>
+     <h2 class="mt-55 -ml-90 font-extrabold text-[19px] text-black">ГИГИЕНА</h2>
     <p class="text-black mt-62 font-mono text-[17px] -ml-40">
       
       КОМПЛЕКС поддерживающих процедур для оптимального качества шерсти и здоровья кожи Окантовываются лапы ушки и зона паха 
