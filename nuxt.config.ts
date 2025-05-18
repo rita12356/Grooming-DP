@@ -33,11 +33,11 @@ export default defineNuxtConfig({
      fallback: true
   },
   app:{
-  baseURL: '/Grooming-DP/'
+  baseURL: '/aboutus/'
   },
 
   router: {
-    base: '/Grooming-DP/'
+    base: '/aboutus/'
   },
 routeRules: {
   '/aboutus': {swr:3600},
