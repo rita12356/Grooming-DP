@@ -5,7 +5,20 @@ export default defineNuxtConfig({
   $development: {
     devtools: { enabled: false },
   },
- 
+  compatibilityDate: '2024-04-03',
+  target: 'static',
+  generate: {
+     fallback: true
+  },
+  $production:{
+  app:{
+  baseURL: '/Grooming-DP/'
+  },
+
+  router: {
+    base: '/Grooming-DP/'
+  },
+},
   css:[`~/assets/css/main.css`],
   modules: [
     '@pinia/nuxt',
@@ -27,18 +40,7 @@ export default defineNuxtConfig({
 
   },
 
-  compatibilityDate: '2024-04-03',
-  target: 'static',
-  generate: {
-     fallback: true
-  },
-  app:{
-  baseURL: '/Grooming-DP/'
-  },
-
-  router: {
-    base: '/Grooming-DP/'
-  },
+ 
 routeRules: {
   '/aboutus': {swr:3600},
   '/services': {swr: 3600},
