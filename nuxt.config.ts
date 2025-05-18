@@ -45,9 +45,7 @@ routeRules: {
   '/aboutus': {swr:3600},
   '/services': {swr: 3600},
   '/reviews': {swr: 3600},
-   '/login': {ssr:true},
-   '/register': {ssr: true},
-   '/types': {ssr: true}
+  
 },
   
   
