@@ -7,7 +7,7 @@
   <hr class="sm:px-60 md:px-60 lg:px-60 ml-220 mt-30 mr-220 border-1 border-amber-500" />
 
   <span
-    class="sm:px-120 md:px-120 lg:px-10 cursor-pointer flex flex-1 justify-baseline gap-20"
+    class="sm:px-120 md:px-120 lg:px-10 cursor-pointer flex flex-1 justify-baseline gap-30"
   >
     <img
       class="transition-all 2s active:border-amber-700 hover:brightness-125 hover:border-20 border-[6px]  hover:scale-110 border-amber-600 ml-10 mt-10 h-44 w-70"

@@ -11,7 +11,7 @@
       class="ml-240 w-[17%] mt-1 mr-250 sm:px-3 md:px-3 lg:px-3 border-1 border-amber-600"
     />
     <p
-      class="font-mono bg-amber-600 text-[#fff] w-[20%] rounded-2xl font-bold sm:px-3 md:px-3 lg:px-3 ml-230 text-[20px] mt-4 mr-260"
+      class="font-mono bg-amber-600 text-[#fff] w-[20%] rounded-2xl font-bold sm:px-3 md:px-3 lg:px-3 ml-230 text-[20px] mt-4 "
     >
      Наши мастера умеют работать с любым подтипом шерсти шпица, так как регулярно обучаются и повышают свою квалификацию. Также неоднократно подтверждали это на конкурсах грумеров
 

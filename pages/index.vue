@@ -1,40 +1,40 @@
 
- <template>
-  
-<div
-    class="flex flex-row max-md:flex-col-reverse justify-around items-center sm:px-30 md:px-10 lg:px-10 min-h-[calc(100vh-5rem)]"
-  >
-    <!-- Это левая сторона -->
-    <div>
-      <p class="border-b-4 border-b-neutral-800  font-RobotoSemiCondensed text-[29px] -ml-110 -mt-100  font-bold text-[#10100E]">Сделай питомца
-         <span class="font-bold text-amber-500"> <br>СЧАСТЛИВЫМ</span></p>
-         
-    <div>
-      <p class="absolute animate-bounce -ml-110 mt-10 font-RobotoSemiCondensed text-[22px] text-[#25231b]">Профессиональный груминг<br> для домашних животных</p>
-     
+<template>
+  <!-- 1 -->
+  <div>
+    <div
+      class="flex flex-row max-md:flex-col-reverse justify-around items-center min-h-[calc(100vh-5rem)]"
+    >
+      <!-- Это левая сторона -->
+      <div>
+        <p class="uppercase  border-b-4 border-b-neutral-800 font-extrabold text-[#25231b] text-[22px]">
+          Сделай питомца <span class="font-bold text-amber-500"><br>счастливым</span>
+        </p>
+        <p class="font-mono animate-bounce text-[#25231b] text-[22px]">
+          Профессиональный груминг для домашних животных
+        </p>
+      </div>
+
+      <!-- Это правая сторона -->
+      <div class="flex justify-center items-center">
+        <!--! Это картинка с Корги -->
+        <img
+          class="brightness-107 w-130 border-30 border-amber-300"
+          src="/public/1.webp"
+          alt=""
+        />
+      </div>
     </div>
-    </div>
-    <!-- Это правая сторона -->
-    <div class="flex justify-center items-center">
-      <!--! Это картинка с Корги -->
-      <img
-        class="brightness-107 border-30 absolute mx-auto w-full md:w-1/6 border-amber-300"
-        src="/1.webp"
-        alt=""
-      />
-    </div>
+    <Promotion></Promotion>
+    <AppInput></AppInput>
+  </div>
+  <!-- 2 -->
+  <div>
+    <!-- Всё остальное должно быть ниже -->
+    <!-- Это отдельный блок с информацией с советами -->
+    <About></About>
     
   </div>
-     
-  
-   
-   
-    <About></About>
-     <Promotion></Promotion>
-      <AppInput></AppInput>
-
-
-  
 </template>
 <style>
 @reference "tailwindcss";
