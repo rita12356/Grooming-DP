@@ -2,9 +2,9 @@
   <script setup>
 
 definePageMeta({
-  middleware: ["is-auth"]
+  middleware: ["auth"]
 
-});
+})
 
 import { useAuthStore } from '@/stores/auth';
 
@@ -15,13 +15,13 @@ const authStore = useAuthStore();
 
   
  
-   <div class="@container">
+   <div class="@container sm:px-1 md:px-1 lg:px-1">
     <img class="ml-200 border-30 border-amber-700 w-60 mt-30" src="/public/1_0.jpg" alt="" />
        <span class="mt-1 absolute font-extrabold text-[27px] ml-210">{{authStore.user.name}}</span>
       <span class="mt-10 absolute font-extrabold text-[27px] ml-210">Мастер {{authStore.user.master}}</span>
       <span class="mt-20 absolute font-extrabold text-[27px] ml-210">Запись в {{authStore.user.time}}</span>
       <span class="mt-30 absolute font-extrabold text-[27px] ml-210">{{authStore.user.types}}</span>
-      <button type="submit" class="button ml-210">Выйти из аккаунта</button>
+      <button @click="authStore.logout" type="submit"class="buttons ml-210">Выйти из аккаунта</button>
       <div class="ml-190">
       <Accordions></Accordions>
       
@@ -31,7 +31,7 @@ const authStore = useAuthStore();
     </template>
     <style>
 @reference "tailwindcss";
-.button {
+.buttons {
   @apply flex  w-100 mt-50  justify-center rounded-4xl active:bg-amber-800 bg-amber-600 px-3 py-1.5 text-sm/6 font-semibold transition-transform hover:scale-105 text-white shadow-xs hover:bg-amber-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600;
 }
 </style>

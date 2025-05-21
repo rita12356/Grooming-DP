@@ -92,13 +92,14 @@ async function register(){
                 />
               </label>
             </div>
-            <div class="flex px-4 py-3">
+            <div  class="flex px-4 py-3">
               <button type="submit"
                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-amber-700 text-[#f8f9fc] text-base font-bold leading-normal tracking-[0.015em]"
               >
                 <span class="truncate">Зарегистрироваться или войти</span>
               </button>
             </div>
+            <p class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">Если регистрация прошла успешно то вы сможете ввойти в свой аккаунт</p>
             <p class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">Забыли имя пользователя или пароль?</p>
             <p class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline">Нет аккаунта? Зарегистрируйтесь</p>
             <p class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center">Входя в систему, вы соглашаетесь с условиями использования и политикой конфиденциальности Grooming DP.</p>

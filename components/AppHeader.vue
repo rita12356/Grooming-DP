@@ -79,7 +79,7 @@ export default {
   @apply sm:hidden md:hidden lg:block;
   
 }.button {
-  @apply sm:block md:block  lg:block;
+  @apply sm:block  md:block  lg:block;
 }
 
 </style>

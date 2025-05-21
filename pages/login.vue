@@ -4,6 +4,10 @@ definePageMeta({
 
 });
 
+import { useAuthStore } from '@/stores/auth';
+
+const authStore = useAuthStore();
+
 
 const email = useState('email',(()=>''))
 const password = useState('password',(()=>''))
