@@ -1,44 +1,64 @@
-
 <template>
-  <!-- 1 -->
-  <div>
-    <div
-      class="flex flex-row max-md:flex-col-reverse justify-around items-center min-h-[calc(100vh-5rem)]"
-    >
-      <!-- Это левая сторона -->
-      <div>
-        <p class="uppercase  border-b-4 border-b-neutral-800 font-extrabold text-[#25231b] text-[22px]">
-          Сделай питомца <span class="font-bold text-amber-500"><br>счастливым</span>
+  <!--! Главная секция -->
+  <div class="mx-auto px-4 py-8 md:py-12 container">
+    <div class="flex lg:flex-row flex-col items-center gap-8 lg:gap-12">
+      <!--! Левая колонка -->
+      <div class="lg:w-1/2 xl:w-3/5">
+        <!--! Заголовок -->
+        <h1 class="mb-6 pb-4 border-neutral-800 border-b-4">
+          <span
+            class="block font-black text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase leading-tight"
+          >
+            СДЕЛАЙ ПИТОМЦА
+          </span>
+          <span
+            class="font-bold text-amber-500 text-4xl md:text-5xl lg:text-6xl xl:text-8xl"
+          >
+            СЧАСТЛИВЫМ
+          </span>
+        </h1>
+
+        <!--! Описание -->
+        <p class="mb-6 text-neutral-700 text-lg md:text-xl">
+          Профессиональная стрижка домашних животных<br />
+          <span class="inline-block mt-2 font-semibold text-amber-600">
+            Оставьте заявку и получите 15% скидку!
+          </span>
         </p>
-        <p class="font-mono animate-bounce mt-10 text-[#25231b] text-[22px]">
-          Профессиональный груминг <br>для домашних животных
-        </p>
+
+        <!--! Форма -->
+        <div class="space-y-4 max-w-[400px]">
+          <Promotion />
+        </div>
       </div>
 
-      <!-- Это правая сторона -->
-      <div class="flex justify-center items-center">
-        <!--! Это картинка с Корги -->
+      <!--! Правая колонка - картинка с Корги -->
+      <div class="flex justify-center lg:w-1/2 xl:w-3/5">
         <img
-          class="brightness-107 w-130 border-30 border-amber-300"
+          class="shadow-2xl border-8 border-amber-300 rounded-3xl w-full max-w-[500px] lg:max-w-none object-cover"
           src="/1.webp"
-          alt=""
+          alt="Счастливая собака породы корги после стрижки"
+          style="min-height: 400px"
         />
       </div>
     </div>
-    <Promotion></Promotion>
-    <AppInput></AppInput>
   </div>
-  <!-- 2 -->
-  <div>
-    <!-- Всё остальное должно быть ниже -->
-    <!-- Это отдельный блок с информацией с советами -->
-    <About></About>
-    
-  </div>
+
+  <!--! Раздел About будет дальше тут -->
+  <About></About>
 </template>
+
 <style>
 @reference "tailwindcss";
-body{
-  @apply overflow-x-hidden;
+body {
+  @apply bg-white overflow-x-hidden;
+}
+
+/* Кастомные переходы */
+.border-amber-300 {
+  transition: border-color 0.3s ease;
+}
+.shadow-2xl {
+  transition: box-shadow 0.3s ease;
 }
 </style>

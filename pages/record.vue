@@ -1,37 +1,49 @@
-  
-  <script setup>
-
+<script setup>
 definePageMeta({
-  middleware: ["auth"]
+  middleware: ["auth"],
+});
 
-})
-
-import { useAuthStore } from '@/stores/auth';
+import { useAuthStore } from "@/stores/auth";
 
 const authStore = useAuthStore();
-
 </script>
-  <template> 
+<template>
+  <div class="flex justify-center m-auto lg:w-1/2 xl:w-1/5">
+    <img
+      class="shadow-2xl border-8 border-amber-600 rounded-3xl w-full max-w-[500px] lg:max-w-none object-cover"
+      src="/public/1_0.jpg"
+      alt="Счастливая собака породы корги после стрижки"
+      style="min-height: 400px"
+    />
+  </div>
+  <div class="mt-1 font-extrabold text-[27px] text-center">
+    {{ authStore.user.name }}
+  </div>
+  <br />
+  <div class="mt-1 font-extrabold text-[27px] text-center">
+    Мастер {{ authStore.user.master }}
+  </div>
+  <br />
+  <div class="mt-1 font-extrabold text-[27px] text-center">
+    Запись в {{ authStore.user.time }}
+  </div>
+  <br />
+  <div class="mt-1 font-extrabold text-[27px] text-center">
+    {{ authStore.user.types }}
+  </div>
+  <button
+    @click="authStore.logout"
+    type="submit"
+    class="buttons m-auto text-lg md:text-xl"
+  >
+    Выйти из аккаунта
+  </button>
 
-  
- 
-   <div class="@container sm:px-1 md:px-1 lg:px-1">
-    <img class="ml-200 border-30 border-amber-700 w-60 mt-30" src="/public/1_0.jpg" alt="" />
-       <span class="mt-1 absolute font-extrabold text-[27px] ml-210">{{authStore.user.name}}</span>
-      <span class="mt-10 absolute font-extrabold text-[27px] ml-210">Мастер {{authStore.user.master}}</span>
-      <span class="mt-20 absolute font-extrabold text-[27px] ml-210">Запись в {{authStore.user.time}}</span>
-      <span class="mt-30 absolute font-extrabold text-[27px] ml-210">{{authStore.user.types}}</span>
-      <button @click="authStore.logout" type="submit"class="buttons ml-210">Выйти из аккаунта</button>
-      <div class="ml-190">
-      <Accordions></Accordions>
-      
-      </div>
-   </div>
-  
-    </template>
-    <style>
+  <Accordions></Accordions>
+</template>
+<style>
 @reference "tailwindcss";
 .buttons {
-  @apply flex  w-100 mt-50  justify-center rounded-4xl active:bg-amber-800 bg-amber-600 px-3 py-1.5 text-sm/6 font-semibold transition-transform hover:scale-105 text-white shadow-xs hover:bg-amber-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600;
+  @apply flex  w-100 mt-1  justify-center rounded-4xl active:bg-amber-800 bg-amber-600 px-3 py-1.5 text-sm/6 font-semibold transition-transform hover:scale-105 text-white shadow-xs hover:bg-amber-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600;
 }
 </style>

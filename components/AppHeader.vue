@@ -8,7 +8,6 @@ export default {
   methods: {
     Toggle() {
       this.toggle = !this.toggle;
-      
     },
   },
 };
@@ -17,13 +16,19 @@ export default {
   <div
     class="@container flex flex-1 justify-evenly items-center gap-4 prose text-black flex-col lg:flex-row fixed bg-white w-[100%] h-20 z-1"
   >
-  
-    
-    <NuxtLink href="/" class="font-bold text-[29px] animate-bounce whitespace-nowrap">
+    <NuxtLink
+      href="/"
+      class="font-bold text-[29px] animate-bounce whitespace-nowrap"
+    >
       Grooming <span class="text-amber-500 font-bold text-[29px]">DP</span>
     </NuxtLink>
 
-    <NuxtLink to="/aboutus"  class="link whitespace-nowrap" :class="{ toggle: toggle }">О НАС</NuxtLink>
+    <NuxtLink
+      to="/aboutus"
+      class="link whitespace-nowrap"
+      :class="{ toggle: toggle }"
+      >О НАС</NuxtLink
+    >
     <NuxtLink to="/services" class="link" :class="{ toggle: toggle }"
       >УСЛУГИ</NuxtLink
     >
@@ -33,7 +38,9 @@ export default {
       :class="{ toggle: toggle }"
       >СТРИЖКИ</NuxtLink
     >
-    <NuxtLink to="/register" class="link"  :class="{ toggle: toggle }">РЕГИСТРАЦИЯ</NuxtLink>
+    <NuxtLink to="/register" class="link" :class="{ toggle: toggle }"
+      >РЕГИСТРАЦИЯ</NuxtLink
+    >
     <NuxtLink to="/login" class="link" :class="{ toggle: toggle }"
       >ЛИЧНЫЙ КАБИНЕТ</NuxtLink
     >
@@ -50,7 +57,7 @@ export default {
     <button
       type="button"
       @click="Toggle"
-      class="button inline-flex items-center  lg:invisible bg-amber-500 hover:bg-amber-600 me-2 p-2.5 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300 text-white text-sm text-center"
+      class="button inline-flex items-center lg:invisible bg-amber-500 hover:bg-amber-600 me-2 p-2.5 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300 text-white text-sm text-center"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +75,6 @@ export default {
       </svg>
     </button>
   </div>
-  
 </template>
 <style>
 @reference "tailwindcss";
@@ -77,9 +83,8 @@ export default {
 }
 .toggle {
   @apply sm:hidden md:hidden lg:block;
-  
-}.button {
+}
+.button {
   @apply sm:block  md:block  lg:block;
 }
-
 </style>

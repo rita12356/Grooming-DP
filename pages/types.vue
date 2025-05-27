@@ -1,92 +1,163 @@
 <template>
-      <h2
-    class="dark:prose-invert animate-pulse prose absolute text-[26px] text-black  ml-270 mt-19"
+  <h2
+    class="prose dark:prose-invert border-b-3 border-b-amber-600 animate-pulse text-[26px] text-center lg:w-2/2 xl:w-10/10 text-[#10100E] mt-10"
   >
     Виды
   </h2>
-  <hr class="sm:px-60 md:px-60 lg:px-60 ml-220 mt-30 mr-220 border-1 border-amber-500" />
 
-  <span
-    class="sm:px-120 md:px-120 lg:px-10 cursor-pointer flex flex-1 justify-baseline gap-30"
+  <div
+    class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
   >
-    <img
-      class="transition-all 2s active:border-amber-700 hover:brightness-125 hover:border-20 border-[6px]  hover:scale-110 border-amber-600 ml-10 mt-10 h-44 w-70"
-      src="/5.png"
-      alt=""
-    />
- <h2 class="mt-55 -ml-100 font-extrabold text-[19px] text-black"> СТРИЖКА "ПЭТ" ГРУМИНГ </h2>
-    <p class="mt-62 -ml-90 font-mono text-[17px] text-black">
-      
-      Короткая стрижка по стандартам шпица, удобная для домашнего содержания
-    </p>
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img
+          class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
+          src="/5.png"
+          alt="Шпиц"
+        />
+      </div>
+      <div class="p-8">
+        <a
+          href="https://тюмень.блэкгрумер.рф/gruming-shpitz"
+          target="_blank"
+          class="block mt-1 active:text-amber-200 hover:text-amber-100 text-lg uppercase leading-tight font-medium text-black"
+          >стрижка "пэт" груминг</a
+        >
+        <p class="mt-2 text-slate-100">
+          Короткая стрижка по стандартам, шпица удобная для домашнего содержания
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <img
-      class="transition-all 2s active:border-amber-700 hover:brightness-125 hover:border-20 border-[6px]  hover:scale-110 border-amber-600 mt-10 h-44 w-70"
-      src="/2.png"
-      alt=""
-    />
-      <h2 class="mt-55 -ml-100 font-extrabold text-[19px] text-black">СТРИЖКА "ПЭТ" ГРУМИНГ </h2>
-    <p class="text-black mt-62 font-mono text-[17px] -ml-90">
-      
-      Второй вариант практичной стрижки для городских реалей
-    </p>
-
-    <img
-      class="transition-all 2s active:border-amber-700 hover:brightness-125 hover:border-20 border-[6px]  hover:scale-110 border-amber-600 mt-10 h-44 w-70"
-      src="/3.png"
-      alt=""
-    />
-    <h2 class="mt-55 -ml-100 font-extrabold text-[19px] text-black">СТРИЖКА "ШОУ" ГРУМИНГ </h2>
-    <p class="text-black mt-62 font-mono text-[17px] -ml-90">
-      
-      Породная стрижка шерсти остается <br>существенно больше подходит для <br>выставок
-    </p>
-
- 
-  </span>
-   <span
-    class="sm:px-120 md:px-120 lg:px-10 cursor-pointer flex flex-1 justify-baseline gap-20"
+  <div
+    class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
   >
-    <img
-      class="transition-all 2s active:border-amber-700 hover:brightness-125 hover:border-20 border-[6px]  hover:scale-110 border-amber-600 ml-10 mt-10 h-44 w-70"
-      src="/7.png"
-      alt=""
-    />
-<h2 class="mt-55 -ml-100 font-extrabold text-[19px] text-black"> СТРИЖКА "ПЭТ" ГРУМИНГ И КРЕАТИВНОЕ ОКРАШИВАНИЕ</h2>
-    <p class="mt-62 -ml-170 font-mono text-[17px] text-black">
-      
-      Стрижка по вашим желаниям, а также креативное окрашивание специальной краской, <br>чтобы подчеркнуть индивидуальность и собирать все взгляды 
-    </p>
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img
+          class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
+          src="/2.png"
+          alt="Шпиц"
+        />
+      </div>
+      <div class="p-8">
+        <a
+          href="https://тюмень.блэкгрумер.рф/gruming-shpitz"
+          target="_blank"
+          class="block mt-1 active:text-amber-200 hover:text-amber-100 uppercase text-lg leading-tight font-medium text-black"
+          >стрижка "пэт" груминг</a
+        >
+        <p class="mt-2 text-slate-100">
+          Второй вариант практичной стрижки для городских реалей
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <img
-      class="transition-all 2s active:border-amber-700 hover:brightness-125 hover:border-20 border-[6px]  hover:scale-110 border-amber-600 mt-10 h-44 w-70"
-      src="/8.png"
-      alt=""
-    />
-     <h2 class="mt-55 -ml-90 font-extrabold text-[19px] text-black">ГИГИЕНА</h2>
-    <p class="text-black mt-62 font-mono text-[17px] -ml-40">
-      
-      КОМПЛЕКС поддерживающих процедур для оптимального качества шерсти <br>и здоровья кожи Окантовываются лапы ушки и зона паха 
-    </p>
+  <div
+    class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
+  >
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img
+          class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
+          src="/3.png"
+          alt="Шпиц"
+        />
+      </div>
+      <div class="p-8">
+        <a
+          href="https://тюмень.блэкгрумер.рф/gruming-shpitz"
+          target="_blank"
+          class="block mt-1 uppercase text-lg active:text-amber-200 hover:text-amber-100 leading-tight font-medium text-black"
+          >стрижка "шоу" груминг</a
+        >
+        <p class="mt-2 text-slate-100">
+          Породная стрижка шерсти остается существенно больше подходит для
+          выставок
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <img
-      class="transition-all 2s active:border-amber-700 hover:brightness-125 hover:border-20 border-[6px]  hover:scale-110 border-amber-600 mt-10 h-44 w-70"
-      src="/9.png"
-      alt=""
-    />
-     <h2 class="mt-55 -ml-90 font-extrabold text-[19px] text-black">СТРИЖКА ПОД МАШИНКУ</h2>
-    <p class="text-black mt-62 font-mono text-[17px] -ml-90">
-      
-      Для любителей покороче, лапки и корпус сбриваем коротко под машинку, <br>оформляем мордочку и хвостик по вашему желанию 
-    </p>
+  <div
+    class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
+  >
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img
+          class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
+          src="/7.png"
+          alt="Мальтипу"
+        />
+      </div>
+      <div class="p-8">
+        <a
+          href="https://тюмень.блэкгрумер.рф/gruming-maltipoo"
+          target="_blank"
+          class="block mt-1 uppercase active:text-amber-200 hover:text-amber-100 text-lg leading-tight font-medium text-black"
+          >стрижка "пэт" груминг и кретивное окрашивание</a
+        >
+        <p class="mt-2 text-slate-100">
+          Стрижка по вашему желанию, а также кретивное окрашивание специальной
+          краской чтобы подчеркнуть индивидуальность и собирать все взгляды
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <div
+    class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
+  >
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img
+          class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
+          src="/8.png"
+          alt="Мальтипу"
+        />
+      </div>
+      <div class="p-8">
+        <a
+          href="https://тюмень.блэкгрумер.рф/gruming-maltipoo"
+          target="_blank"
+          class="block mt-1 uppercase active:text-amber-200 hover:text-amber-100 text-lg leading-tight font-medium text-black"
+          >гигиена</a
+        >
+        <p class="mt-2 text-slate-100">
+          КОМПЛЕКС поддерживающих процедур для оптимального качества шерсти и
+          здоровья кожи Окантовываются лапы ушки и зоны паха
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <div
+    class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
+  >
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img
+          class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
+          src="/9.png"
+          alt="Мальтипу"
+        />
+      </div>
+      <div class="p-8">
+        <a
+          href="https://тюмень.блэкгрумер.рф/gruming-maltipoo"
+          target="_blank"
+          class="block mt-1 uppercase active:text-amber-200 hover:text-amber-100 text-lg leading-tight font-medium text-black"
+          >стрижка под машинку</a
+        >
+        <p class="mt-2 text-slate-100">
+          Для любителей покороче, лапки и корпус сбриваем коротко под машинку,
+          оформляем и хвостик по вашему желанию
+        </p>
+      </div>
+    </div>
+  </div>
 
- 
-  </span>
   <Care></Care>
 </template>
-
-
-
-
