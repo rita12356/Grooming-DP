@@ -4,7 +4,7 @@
     class="mx-auto px-4 md:py-12 container bg-white text-center border-t-4 border-t-black text-black py-10 mt-10"
   >
      <div
-      class="flex lg:flex-row flex-col items-center gap-80  lg:gap-12"
+      class="flex lg:flex-row flex-col items-center gap-8  lg:gap-12"
     >
     <NuxtLink class="links lg:w-9/6 xl:w-9/5  text-[#cb7625] font-bold" href="/"
       >Groomingmail.ru</NuxtLink
