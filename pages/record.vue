@@ -40,6 +40,24 @@ const authStore = useAuthStore();
   </button>
 
   <Accordions></Accordions>
+  <div class="text-[26px] font-bold  text-center">
+    Прошлые записи 
+  </div>
+   <div class="mt-1 font-extrabold text-[27px] text-center">
+    {{ authStore.user.name }}
+  </div>
+  <br />
+  <div class="mt-1 font-extrabold text-[27px] text-center">
+    Мастера Ульяна, Алина, Дарья, Анастасия С, Светлана 
+  </div>
+  <br />
+  <div class="mt-1 font-extrabold text-[27px] text-center">Аляскинский Маламут
+    Записи на  SPA услуги и дополнительные, Австралийская овчарка, Американская Акита, Акита Ину, Американский булли, 
+  </div>
+  <br />
+  <div class="mt-1 font-extrabold text-[27px] text-center">
+    Породы мальтипу, Йоркширский терьер, пудель
+  </div>
 </template>
 <style>
 @reference "tailwindcss";

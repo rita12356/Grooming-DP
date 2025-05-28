@@ -13,16 +13,16 @@ const name = useState("name", () => "");
 const master = useState("master", () => "");
 const time = useState("time", () => "");
 const types = useState("types", () => "");
-const text = useState("text", () => "");
+const texts = useState("texts", () => "");
 
 async function register() {
   try {
     if (name.value.length == 0) {
-      text.value = "Заполните все поля";
+      texts.value = "Заполните все поля";
     } else if (email.value.length == 0) {
-      text.value = "Заполните все поля";
+      texts.value = "Заполните все поля";
     } else if (password.value.length == 0) {
-      text.value = "Заполните все поля";
+      texts.value = "Заполните все поля";
     } else {
       const user = await $fetch("/api/users/register", {
         method: "post",
@@ -48,119 +48,93 @@ async function register() {
 </script>
 
 <template>
-  <div
-    class="relative flex size-full min-h-screen flex-col bg-amber-200 group/design-root overflow-x-hidden"
-    style="font-family: 'Work Sans', 'Noto Sans', sans-serif"
+  <h1
+    class="text-[#0d131b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-3 pt-5"
   >
-    <div class="layout-container flex h-full grow flex-col">
-      <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7ecf3] px-10 py-3"
-      >
-        <div class="flex items-center gap-4 text-[#0d131b]"></div>
-        <div class="flex flex-1 justify-end gap-8">
-          <div
-            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-            style="
-              background-image: url('https://cdn.usegalileo.ai/sdxl10/55bc7632-52fb-4e16-93f0-e0091162550b.png');
-            "
-          ></div>
-        </div>
-      </header>
-      <form @submit.prevent="register">
-        <div
-          class="layout-content-container flex flex-col w-[512px] py-5 max-w-[960px] flex-1"
-        >
-          <h1
-            class="text-[#0d131b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-3 pt-5"
-          >
-            Добро пожаловать
-          </h1>
-          <p
-            class="text-[#0d131b] text-base font-normal leading-normal pb-3 pt-1 px-4"
-          >
-            Зарегистрируйтесь в Grooming DP и получите доступ к своему кабинету
-          </p>
-          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
-              <p
-                class="text-[#0d131b] text-base font-medium leading-normal pb-2"
-              >
-                Почта
-              </p>
-              <input
-                type="email"
-                placeholder="Почта"
-                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d131b] focus:outline-0 focus:ring-0 border border-[#cfd8e7] bg-[#f8f9fc] focus:border-[#cfd8e7] h-14 placeholder:text-[#4c6a9a] p-[15px] text-base font-normal leading-normal"
-                v-model="email"
-              />
-            </label>
-          </div>
+    Добро пожаловать
+  </h1>
+  <p class="text-[#0d131b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+    Зарегистрируйтесь в Grooming DP и получите доступ к своим аккаунтам
+  </p>
 
-          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
-              <p
-                class="text-[#0d131b] text-base font-medium leading-normal pb-2"
-              >
-                ИМЯ
-              </p>
-              <input
-                type="text"
-                placeholder="ИМЯ"
-                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d131b] focus:outline-0 focus:ring-0 border border-[#cfd8e7] bg-[#f8f9fc] focus:border-[#cfd8e7] h-14 placeholder:text-[#4c6a9a] p-[15px] text-base font-normal leading-normal"
-                v-model="name"
-              />
-            </label>
-          </div>
-          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
-              <p
-                class="text-[#0d131b] text-base font-medium leading-normal pb-2"
-              >
-                Пароль
-              </p>
-              <input
-                placeholder="Пароль"
-                type="password"
-                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d131b] focus:outline-0 focus:ring-0 border border-[#cfd8e7] bg-[#f8f9fc] focus:border-[#cfd8e7] h-14 placeholder:text-[#4c6a9a] p-[15px] text-base font-normal leading-normal"
-                v-model="password"
-              />
-            </label>
-          </div>
-          <div class="flex px-4 py-3">
-            <button
-              type="submit"
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-amber-700 text-[#f8f9fc] text-base font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Зарегистрироваться</span>
-            </button>
-          </div>
-          <span class="text-amber-700 font-mono text-[18px] text-center">{{
-            text
-          }}</span>
-          <p
-            class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline"
-          >
-            Забыли имя пользователя или пароль?
-          </p>
-          <p
-            class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline"
-          >
-            Нет аккаунта? Зарегистрируйтесь
-          </p>
-          <p
-            class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center"
-          >
-            Входя в систему, вы соглашаетесь с условиями использования и
-            политикой конфиденциальности Grooming DP.
-          </p>
-        </div>
-      </form>
+  <div class="space-y-6">
+    <!-- Форма -->
+    <div class="gap-4 grid max-w-[400px] m-auto">
+      <div class="space-y-3">
+        <p class="text-[#0d131b] text-base font-medium leading-normal pb-2">
+          Почта
+        </p>
+        <input
+          v-model="email"
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          placeholder="Почта"
+          class="bg-white dark:bg-gray-700 px-4 py-3 border-2 border-amber-300 focus:border-transparent rounded-lg focus:ring-2 focus:ring-amber-500 w-full text-neutral-800 dark:text-gray-100 text-lg transition-colors duration-150 app-input placeholder-gray-400 dark:placeholder-gray-300"
+        />
+
+        <p class="text-[#0d131b] text-base font-medium leading-normal pb-2">
+          Имя
+        </p>
+        <input
+          type="name"
+          name="name"
+          id="name"
+          autocomplete="name"
+          v-model="name"
+          placeholder="Имя"
+          class="bg-white dark:bg-gray-700 px-4 py-3 border-2 border-amber-300 focus:border-transparent rounded-lg focus:ring-2 focus:ring-amber-500 w-full text-neutral-800 dark:text-gray-100 text-lg transition-colors duration-150 app-input placeholder-gray-400 dark:placeholder-gray-300"
+        />
+
+        <p class="text-[#0d131b] text-base font-medium leading-normal pb-2">
+          Пароль
+        </p>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          autocomplete="password"
+          v-model="password"
+          placeholder="Пароль"
+          class="bg-white dark:bg-gray-700 px-4 py-3 border-2 border-amber-300 focus:border-transparent rounded-lg focus:ring-2 focus:ring-amber-500 w-full text-neutral-800 dark:text-gray-100 text-lg transition-colors duration-150 app-input placeholder-gray-400 dark:placeholder-gray-300"
+        />
+      </div>
     </div>
   </div>
+
+  <div class="flex justify-center mt-10">
+    <button
+      @click="register"
+      class="bg-amber-500 hover:bg-amber-600 px-6 py-3 rounded-lg cursor-pointer font-bold text-white text-lg md:text-xl hover:scale-[1.02] transition-all duration-200 transform"
+    >
+      Зарегистрироваться
+    </button>
+  </div>
+  <div class="text-center">
+    <span class="text-amber-700 font-mono text-[18px]">{{ texts }}</span>
+  </div>
+
+  <p
+    class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline"
+  >
+    Забыли имя пользователя или пароль?
+  </p>
+  <p
+    class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline"
+  >
+    Нет аккаунта? Зарегистрируйтесь
+  </p>
+  <p
+    class="text-amber-800 text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center"
+  >
+    Входя в систему, вы соглашаетесь с условиями использования и политикой
+    конфиденциальности Grooming DP.
+  </p>
 </template>
 
-<style>
-form {
-  margin-left: 700px;
+<style scoped>
+.app-input {
+  @apply outline-none focus:outline-none ring-0 focus:ring-0;
 }
 </style>
