@@ -11,7 +11,7 @@
     <div class="md:flex">
       <div class="md:shrink-0">
         <img
-          class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
+          class="h-48 w-full object-cover  hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
           src="/5.png"
           alt="Шпиц"
         />
@@ -20,7 +20,7 @@
         <a
           href="https://тюмень.блэкгрумер.рф/gruming-shpitz"
           target="_blank"
-          class="block mt-1 active:text-amber-200 hover:text-amber-100 text-lg uppercase leading-tight font-medium text-black"
+          class="block mt-1 active:text-amber-200 transition ease-in-out delay-160  hover:text-amber-100 text-lg uppercase leading-tight font-medium text-black"
           >стрижка "пэт" груминг</a
         >
         <p class="mt-2 text-slate-100">
@@ -45,7 +45,7 @@
         <a
           href="https://тюмень.блэкгрумер.рф/gruming-shpitz"
           target="_blank"
-          class="block mt-1 active:text-amber-200 hover:text-amber-100 uppercase text-lg leading-tight font-medium text-black"
+          class="block mt-1 active:text-amber-200 transition ease-in-out delay-160  hover:text-amber-100 uppercase text-lg leading-tight font-medium text-black"
           >стрижка "пэт" груминг</a
         >
         <p class="mt-2 text-slate-100">
@@ -70,7 +70,7 @@
         <a
           href="https://тюмень.блэкгрумер.рф/gruming-shpitz"
           target="_blank"
-          class="block mt-1 uppercase text-lg active:text-amber-200 hover:text-amber-100 leading-tight font-medium text-black"
+          class="block mt-1 uppercase text-lg active:text-amber-200 transition ease-in-out delay-160   hover:text-amber-100 leading-tight font-medium text-black"
           >стрижка "шоу" груминг</a
         >
         <p class="mt-2 text-slate-100">
@@ -96,7 +96,7 @@
         <a
           href="https://тюмень.блэкгрумер.рф/gruming-maltipoo"
           target="_blank"
-          class="block mt-1 uppercase active:text-amber-200 hover:text-amber-100 text-lg leading-tight font-medium text-black"
+          class="block mt-1 uppercase active:text-amber-200 transition ease-in-out delay-160   hover:text-amber-100 text-lg leading-tight font-medium text-black"
           >стрижка "пэт" груминг и кретивное окрашивание</a
         >
         <p class="mt-2 text-slate-100">
@@ -122,7 +122,7 @@
         <a
           href="https://тюмень.блэкгрумер.рф/gruming-maltipoo"
           target="_blank"
-          class="block mt-1 uppercase active:text-amber-200 hover:text-amber-100 text-lg leading-tight font-medium text-black"
+          class="block mt-1 uppercase active:text-amber-200 hover:text-amber-100 transition ease-in-out delay-160  text-lg leading-tight font-medium text-black"
           >гигиена</a
         >
         <p class="mt-2 text-slate-100">
@@ -148,7 +148,7 @@
         <a
           href="https://тюмень.блэкгрумер.рф/gruming-maltipoo"
           target="_blank"
-          class="block mt-1 uppercase active:text-amber-200 hover:text-amber-100 text-lg leading-tight font-medium text-black"
+          class="block mt-1 uppercase active:text-amber-200 transition ease-in-out delay-160  hover:text-amber-100 text-lg leading-tight font-medium text-black"
           >стрижка под машинку</a
         >
         <p class="mt-2 text-slate-100">
