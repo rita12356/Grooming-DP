@@ -8,12 +8,12 @@
 
     <!-- Здесь основной контент -->
     <!--! Добавляем внешний отступ на ширину шапки mt-20 -->
-    <main class="mt-100">
+    <main class="mt-20">
       <slot></slot>
     </main>
 
     <!-- Здесь подвал -->
-    <AppFooter></AppFooter>
+    <AppFooter  ></AppFooter>
   </div>
 </template>
 <style scoped></style>

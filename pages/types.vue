@@ -8,7 +8,7 @@
   <div
     class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
   >
-    <div class="md:flex">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
       <div class="md:shrink-0">
         <img
           class="h-48 w-full object-cover  hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
@@ -33,7 +33,7 @@
   <div
     class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
   >
-    <div class="md:flex">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
       <div class="md:shrink-0">
         <img
           class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
@@ -58,7 +58,7 @@
   <div
     class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
   >
-    <div class="md:flex">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
       <div class="md:shrink-0">
         <img
           class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
@@ -84,7 +84,7 @@
   <div
     class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
   >
-    <div class="md:flex">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
       <div class="md:shrink-0">
         <img
           class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
@@ -110,7 +110,7 @@
   <div
     class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
   >
-    <div class="md:flex">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
       <div class="md:shrink-0">
         <img
           class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
@@ -136,7 +136,7 @@
   <div
     class="max-w-md mx-auto bg-amber-600 rounded-xl shadow-md mt-6 md:max-w-1xl"
   >
-    <div class="md:flex">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
       <div class="md:shrink-0">
         <img
           class="h-48 w-full object-cover hover:scale-109 transition-transform duration-300 ease-in-out md:h-full md:w-48"
