@@ -79,12 +79,12 @@ export default {
 <style>
 @reference "tailwindcss";
 .link {
-  @apply sm:flex-row  text-[11px]      active:text-amber-500 md:text-[10px]  lg:text-[22px]      tracking-tight transition ease-in-out delay-160   hover:text-amber-600;
+  @apply min-[320px]:flex-row  text-[11px]      active:text-amber-500 md:text-[10px]  lg:text-[22px]      tracking-tight transition ease-in-out delay-160   hover:text-amber-600;
 }
 .toggle {
-  @apply sm:hidden md:hidden lg:block;
+  @apply min-[320px]:hidden md:hidden lg:block;
 }
 .button {
-  @apply sm:block  md:block  lg:block;
+  @apply min-[320px]:block  md:block  lg:block;
 }
 </style>

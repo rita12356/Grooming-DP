@@ -45,7 +45,7 @@
 </h1>
 <div class="mx-auto px-4 py-8 md:py-12 container">
   <div class="flex lg:flex-row flex-col items-center gap-8 lg:gap-12">
-<div class="hs-accordion-group">
+<div class="hs-accordion-group grid grid-cols-1 gap-4 place-items-center">
   <div class="hs-accordion active" id="hs-basic-heading-one">
     <button @click="Toggle" class="bg-amber-600 border-10  transition ease-in-out delay-160  border-amber-700 hs-accordion-toggle   py-1 flex justify-center lg:w-22/9 ml-30 xl:w-400 font-semibold text-start  cursor-pointer  focus:text-white rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="true" aria-controls="hs-basic-collapse-one">
    
@@ -67,7 +67,7 @@
   
   <div class="mx-auto px-4 py-8 md:py-12 container">
   <div class="flex lg:flex-row flex-col items-center gap-8 lg:gap-12">
-  <div class="hs-accordion-group">
+  <div class="hs-accordion-group grid grid-cols-1 gap-4 place-items-center">
   <div class="hs-accordion active" id="hs-basic-heading-one">
     <button @click="Toggle1" class="bg-amber-600 border-10 transition ease-in-out delay-160 border-amber-700 hs-accordion-toggle  py-1 flex justify-center lg:w-22/9 ml-30 xl:w-400 font-semibold text-start  cursor-pointer  focus:text-white rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="true" aria-controls="hs-basic-collapse-one">
 
@@ -95,7 +95,7 @@
 
  <div class="mx-auto px-4 py-8 md:py-12 container">
   <div class="flex lg:flex-row flex-col items-center gap-8 lg:gap-12">
-  <div class="hs-accordion-group">
+  <div class="hs-accordion-group grid grid-cols-1 gap-4 place-items-center">
   <div class="hs-accordion active" id="hs-basic-heading-one">
     <button @click="Toggle2" class="bg-amber-600 border-10 transition ease-in-out delay-160 border-amber-700 hs-accordion-toggle  py-1 flex justify-center lg:w-22/9 ml-30 xl:w-400 font-semibold text-start  cursor-pointer  focus:text-white rounded-lg disabled:opacity-50 disabled:pointer-events-none" aria-expanded="true" aria-controls="hs-basic-collapse-one">
 

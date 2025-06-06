@@ -13,7 +13,7 @@
     </main>
 
     <!-- Здесь подвал -->
-    <AppFooter  ></AppFooter>
+    <AppFooter></AppFooter>
   </div>
 </template>
 <style scoped></style>
